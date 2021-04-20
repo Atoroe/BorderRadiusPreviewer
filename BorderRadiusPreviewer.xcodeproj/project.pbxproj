@@ -13,6 +13,7 @@
 		E349A5AF262EDE46000AAC47 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E349A5AD262EDE46000AAC47 /* Main.storyboard */; };
 		E349A5B1262EDE4C000AAC47 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E349A5B0262EDE4C000AAC47 /* Assets.xcassets */; };
 		E349A5B4262EDE4C000AAC47 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E349A5B2262EDE4C000AAC47 /* LaunchScreen.storyboard */; };
+		E349A5C5262EF73C000AAC47 /* UIView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349A5C4262EF73C000AAC47 /* UIView + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E349A5B0262EDE4C000AAC47 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E349A5B3262EDE4C000AAC47 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E349A5B5262EDE4C000AAC47 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E349A5C4262EF73C000AAC47 /* UIView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +58,10 @@
 		E349A5A6262EDE46000AAC47 /* BorderRadiusPreviewer */ = {
 			isa = PBXGroup;
 			children = (
-				E349A5BE262EDE8D000AAC47 /* Supporting */,
+				E349A5C2262EF6F6000AAC47 /* View */,
 				E349A5BD262EDE7E000AAC47 /* ViewControllers */,
 				E349A5BC262EDE71000AAC47 /* Stroryboards */,
+				E349A5BE262EDE8D000AAC47 /* Supporting */,
 				E349A5C0262EDE9D000AAC47 /* Resources */,
 			);
 			path = BorderRadiusPreviewer;
@@ -97,6 +100,14 @@
 				E349A5B0262EDE4C000AAC47 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E349A5C2262EF6F6000AAC47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E349A5C4262EF73C000AAC47 /* UIView + Extension.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E349A5C5262EF73C000AAC47 /* UIView + Extension.swift in Sources */,
 				E349A5AC262EDE46000AAC47 /* BorderRadiusViewController.swift in Sources */,
 				E349A5A8262EDE46000AAC47 /* AppDelegate.swift in Sources */,
 				E349A5AA262EDE46000AAC47 /* SceneDelegate.swift in Sources */,
@@ -321,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
 				INFOPLIST_FILE = BorderRadiusPreviewer/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -340,6 +353,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2SK72H5U39;
 				INFOPLIST_FILE = BorderRadiusPreviewer/Supporting/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
