@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3249812262F12940072A7BA /* UIBezierPath + Extansion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3249811262F12940072A7BA /* UIBezierPath + Extansion.swift */; };
 		E349A5A8262EDE46000AAC47 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349A5A7262EDE46000AAC47 /* AppDelegate.swift */; };
 		E349A5AA262EDE46000AAC47 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349A5A9262EDE46000AAC47 /* SceneDelegate.swift */; };
 		E349A5AC262EDE46000AAC47 /* BorderRadiusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E349A5AB262EDE46000AAC47 /* BorderRadiusViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3249811262F12940072A7BA /* UIBezierPath + Extansion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBezierPath + Extansion.swift"; sourceTree = "<group>"; };
 		E349A5A4262EDE46000AAC47 /* BorderRadiusPreviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BorderRadiusPreviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E349A5A7262EDE46000AAC47 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E349A5A9262EDE46000AAC47 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				E349A5C4262EF73C000AAC47 /* UIView + Extension.swift */,
+				E3249811262F12940072A7BA /* UIBezierPath + Extansion.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				E349A5C5262EF73C000AAC47 /* UIView + Extension.swift in Sources */,
 				E349A5AC262EDE46000AAC47 /* BorderRadiusViewController.swift in Sources */,
 				E349A5A8262EDE46000AAC47 /* AppDelegate.swift in Sources */,
+				E3249812262F12940072A7BA /* UIBezierPath + Extansion.swift in Sources */,
 				E349A5AA262EDE46000AAC47 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
