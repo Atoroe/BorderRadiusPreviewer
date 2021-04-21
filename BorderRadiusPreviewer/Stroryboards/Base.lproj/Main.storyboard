@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AQW-oL-QlZ">
-                                <rect key="frame" x="16" y="79" width="288" height="444"/>
+                                <rect key="frame" x="16" y="60" width="288" height="463"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vRY-dm-ySY">
                                         <rect key="frame" x="0.0" y="0.0" width="43" height="34"/>
@@ -32,7 +32,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qPP-6J-Er6">
-                                        <rect key="frame" x="0.0" y="410" width="43" height="34"/>
+                                        <rect key="frame" x="0.0" y="429" width="43" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="2i7-gC-G8s"/>
                                             <constraint firstAttribute="width" constant="43" id="OdM-Ki-m1J"/>
@@ -44,7 +44,7 @@
                                         </connections>
                                     </textField>
                                     <textField opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="999" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2xY-uN-gtv">
-                                        <rect key="frame" x="245" y="410" width="43" height="34"/>
+                                        <rect key="frame" x="245" y="429" width="43" height="34"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="34" id="OQa-H0-T0M"/>
                                             <constraint firstAttribute="width" constant="43" id="xgQ-vF-aHc"/>
@@ -68,7 +68,7 @@
                                         </connections>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P7g-L4-0UO">
-                                        <rect key="frame" x="46" y="37" width="196" height="370"/>
+                                        <rect key="frame" x="46" y="37" width="196" height="389"/>
                                         <color key="backgroundColor" systemColor="systemGray4Color"/>
                                     </view>
                                 </subviews>
@@ -93,13 +93,14 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AQW-oL-QlZ" secondAttribute="trailing" constant="16" id="72f-MQ-qnX"/>
-                            <constraint firstItem="AQW-oL-QlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="RJd-7X-YF7"/>
+                            <constraint firstItem="AQW-oL-QlZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="RJd-7X-YF7"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AQW-oL-QlZ" secondAttribute="bottom" constant="45" id="ST2-nh-EjF"/>
                             <constraint firstItem="AQW-oL-QlZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="YGy-kh-unf"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="A4Y-L8-gYJ"/>
                     <connections>
+                        <outlet property="bottomConstraintHeight" destination="ST2-nh-EjF" id="YAS-Vu-nqH"/>
                         <outlet property="shapeView" destination="P7g-L4-0UO" id="CjO-Pm-Xv1"/>
                         <outletCollection property="radiusTextFields" destination="vRY-dm-ySY" collectionClass="NSMutableArray" id="xqu-Eh-Zdr"/>
                         <outletCollection property="radiusTextFields" destination="C4z-s8-7qH" collectionClass="NSMutableArray" id="eG3-od-kY9"/>

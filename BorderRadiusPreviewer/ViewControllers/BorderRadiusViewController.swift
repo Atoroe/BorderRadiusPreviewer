@@ -11,7 +11,7 @@ class BorderRadiusViewController: UIViewController {
 
     @IBOutlet weak var shapeView: UIView!
     @IBOutlet var radiusTextFields: [UITextField]!
-    
+    @IBOutlet weak var bottomConstraintHeight: NSLayoutConstraint!
     
     let startColor = UIColor(red: 255/255,
                              green: 224/255,
@@ -22,8 +22,13 @@ class BorderRadiusViewController: UIViewController {
                            blue: 116/255,
                            alpha: 1)
     
+    var initialConstraintHeight = CGFloat()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        initialConstraintHeight = bottomConstraintHeight.constant
+        registerForKeyboardNotifications()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,14 +86,11 @@ extension BorderRadiusViewController: UITextFieldDelegate {
         guard let keyboardFrame = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else { return }
         
         if notification.name == UIResponder.keyboardWillShowNotification {
-            self.signUpBottomConstraint.constant = keyboardFrame.height
+            bottomConstraintHeight.constant = keyboardFrame.height + 16
             self.view.layoutIfNeeded()
-            self.blurryWillChange(statment: true)
         } else {
-            self.signUpBottomConstraint.constant = self.initialConstraintHeight
+            bottomConstraintHeight.constant = initialConstraintHeight
             self.view.layoutIfNeeded()
-            self.blurryWillChange(statment: false)
-            
         }
     }
 }
